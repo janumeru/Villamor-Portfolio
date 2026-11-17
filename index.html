@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Villamor.db — BSIT Database System Technology Portfolio</title>
-  <meta name="description" content="Digital portfolio of Villamor, BSIT undergraduate specializing in Database System Technology at NEUST CICT, Cabanatuan City, Philippines." />
+  <title>Villamor, John Mel Portfolio</title>
+  <meta name="description" content="Digital portfolio of John Mel Villamor, BSIT undergraduate specializing in Database System Technology at NEUST CICT, Cabanatuan City, Philippines." />
 
-  <!-- Google Fonts: Inter for UI & JetBrains Mono for Schema / SQL Accents -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Initialize Dark Theme by Default Before Render to Avoid Flash -->
   <script>
     (function () {
       try {
@@ -27,7 +25,6 @@
     })();
   </script>
 
-  <!-- Tailwind CSS CDN & Configuration -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -49,18 +46,12 @@
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-[#090d16] dark:text-slate-100 font-sans antialiased selection:bg-emerald-500/20 selection:text-emerald-600 dark:selection:text-emerald-300 transition-colors duration-200 overflow-x-hidden">
 
-  <!-- Subtle Architectural Database Grid Overlay -->
   <div aria-hidden="true" class="fixed inset-0 pointer-events-none z-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.04)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(148,163,184,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.05)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
 
-  <!-- ===================================================================== -->
-  <!-- 1. STICKY NAVIGATION BAR                                              -->
-  <!-- ===================================================================== -->
   <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[#090d16]/85 border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <!-- Brand Identifier -->
       <a href="#top" class="flex items-center gap-2.5 group focus:outline-none">
         <span class="w-8 h-8 rounded-lg bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
-          <!-- Database Cylinder Icon -->
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
             <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
@@ -72,7 +63,6 @@
         </span>
       </a>
 
-      <!-- Desktop Navigation Links -->
       <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-1 lg:gap-2">
         <a href="#about" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800/60 transition-colors">About</a>
         <a href="#skills" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800/60 transition-colors">Skills</a>
@@ -81,7 +71,6 @@
         <a href="#contact" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800/60 transition-colors">Contact</a>
       </nav>
 
-      <!-- Right Controls: Theme Toggle & Mobile Menu Button -->
       <div class="flex items-center gap-2">
         <button
           id="theme-toggle"
@@ -90,7 +79,6 @@
           title="Toggle Light / Dark Theme"
           class="p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 text-slate-700 dark:text-slate-300 hover:border-emerald-500/50 dark:hover:border-emerald-500/50 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
         >
-          <!-- Sun Icon (shown in dark mode to switch to light) -->
           <svg id="icon-sun" class="w-4 h-4 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -102,13 +90,11 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <!-- Moon Icon (shown in light mode to switch to dark) -->
           <svg id="icon-moon" class="w-4 h-4 block dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
-        <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-btn"
           type="button"
@@ -129,7 +115,6 @@
       </div>
     </div>
 
-    <!-- Mobile Dropdown Navigation -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#090d16] px-4 py-3 space-y-1">
       <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/70">About</a>
       <a href="#skills" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/70">Skills</a>
@@ -140,14 +125,9 @@
   </header>
 
   <main id="top" class="relative z-10">
-    <!-- =================================================================== -->
-    <!-- 2. HERO SECTION                                                     -->
-    <!-- =================================================================== -->
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 sm:pt-20 sm:pb-24">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        <!-- Left Column: Intro & CTAs -->
         <div class="lg:col-span-6 space-y-6">
-          <!-- Status Badge -->
           <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-700 dark:text-emerald-300 text-xs sm:text-sm font-medium">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -156,17 +136,22 @@
             <span>Open to Entry-Level Database Programmer Roles</span>
           </div>
 
-          <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold tracking-tight text-slate-900 dark:text-slate-50 leading-[1.12]">
-            Hi, I'm Villamor.
-          </h1>
+          <div>
+            <img
+              src="John Mel.jpg"
+              alt="John Mel Villamor"
+              class="w-36 h-36 rounded-full object-cover bg-white border-[3px] border-emerald-500 shadow-lg mb-5"
+              style="object-position: center 75%;"
+            />
+            <h1 class="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold tracking-tight text-slate-900 dark:text-slate-50 leading-[1.12]">
+              Hi, I'm Villamor.
+            </h1>
+          </div>
 
-          <!-- Subheadline -->
           <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
             BSIT student majoring in Database System Technology at NEUST. I design normalized relational schemas, write clean SQL queries, and build data-driven applications.
           </p>
 
-          <!-- Primary CTA Buttons -->
           <div class="flex flex-wrap items-center gap-3 pt-1">
             <a
               href="#projects"
@@ -205,7 +190,6 @@
             </button>
           </div>
 
-          <!-- Compact Metadata Strip -->
           <div class="pt-2 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono text-slate-500 dark:text-slate-400">
             <span class="flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -222,10 +206,8 @@
           </div>
         </div>
 
-        <!-- Right Column: Interactive SQL / Schema Preview Card -->
         <div class="lg:col-span-6">
           <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] shadow-xl shadow-slate-900/5 dark:shadow-black/40 overflow-hidden">
-            <!-- Window Top Header & Interactive Tabs -->
             <div class="px-4 py-3 border-b border-slate-200 dark:border-slate-800 bg-slate-100/70 dark:bg-slate-900/90 flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-rose-400/80"></span>
@@ -234,7 +216,6 @@
                 <span class="ml-2 font-mono text-xs text-slate-500 dark:text-slate-400">finmansys_core.sql</span>
               </div>
 
-              <!-- View Switcher Tabs -->
               <div role="tablist" aria-label="Database Preview Mode" class="inline-flex p-1 rounded-lg bg-slate-200/80 dark:bg-slate-950 border border-slate-300/60 dark:border-slate-800">
                 <button
                   id="tab-schema"
@@ -257,16 +238,13 @@
               </div>
             </div>
 
-            <!-- TAB 1: SCHEMA VIEW (Normalized 3NF Tables: users, accounts, transactions) -->
             <div id="panel-schema" role="tabpanel" class="p-4 sm:p-5 space-y-4">
               <div class="flex items-center justify-between text-xs font-mono text-slate-500 dark:text-slate-400">
                 <span>NORMALIZATION: <strong class="text-emerald-600 dark:text-emerald-400">3NF VERIFIED</strong></span>
                 <span>ENGINE: InnoDB / UTF8MB4</span>
               </div>
 
-              <!-- Normalized Table Cards Grid -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
-                <!-- Table: users -->
                 <div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-[#090d16] overflow-hidden">
                   <div class="px-3 py-2 bg-slate-100 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
                     <span class="font-semibold text-slate-800 dark:text-slate-100">users</span>
@@ -298,7 +276,6 @@
                   </ul>
                 </div>
 
-                <!-- Table: accounts -->
                 <div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-[#090d16] overflow-hidden">
                   <div class="px-3 py-2 bg-slate-100 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
                     <span class="font-semibold text-slate-800 dark:text-slate-100">accounts</span>
@@ -330,7 +307,6 @@
                   </ul>
                 </div>
 
-                <!-- Table: transactions (Full Width Span) -->
                 <div class="sm:col-span-2 rounded-xl border border-emerald-500/30 bg-slate-50/70 dark:bg-[#090d16] overflow-hidden">
                   <div class="px-3 py-2 bg-emerald-500/10 border-b border-emerald-500/20 flex items-center justify-between">
                     <span class="font-semibold text-slate-900 dark:text-emerald-300">transactions</span>
@@ -368,7 +344,6 @@
               </div>
             </div>
 
-            <!-- TAB 2: SAMPLE QUERY VIEW -->
             <div id="panel-query" role="tabpanel" class="hidden p-4 sm:p-5 space-y-4">
               <div class="flex items-center justify-between text-xs font-mono text-slate-500 dark:text-slate-400">
                 <span>QUERY: Account Ledger Summary</span>
@@ -388,7 +363,6 @@
 <span class="text-emerald-400">GROUP BY</span> u.user_id, a.account_id
 <span class="text-emerald-400">ORDER BY</span> net_flow <span class="text-emerald-400">DESC</span>;</code></pre>
 
-              <!-- Simulated Query Result Row -->
               <div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#090d16] p-3 font-mono text-[11px]">
                 <div class="text-slate-400 mb-1.5 flex justify-between">
                   <span>RESULT PREVIEW (2 rows)</span>
@@ -419,13 +393,9 @@
       </div>
     </section>
 
-    <!-- =================================================================== -->
-    <!-- 3. ABOUT & EDUCATION SECTION                                        -->
-    <!-- =================================================================== -->
     <section id="about" class="scroll-mt-20 border-t border-slate-200/80 dark:border-slate-800/80 bg-white/50 dark:bg-slate-900/25">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          <!-- About Column -->
           <div class="lg:col-span-6 space-y-4">
             <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
               <span>01 //</span>
@@ -441,7 +411,6 @@
               From normalizing raw requirements into 3NF tables and configuring role-based user privileges in MySQL to connecting backend queries with PHP, Python, and JavaScript interfaces, I enjoy building systems where the underlying data layer is well-structured and dependable.
             </p>
 
-            <!-- Core Principles Mini Grid -->
             <div class="grid grid-cols-2 gap-3 pt-2">
               <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424]">
                 <div class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-semibold">DATA INTEGRITY</div>
@@ -454,7 +423,6 @@
             </div>
           </div>
 
-          <!-- Education Card Column -->
           <div id="education" class="lg:col-span-6 scroll-mt-24">
             <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-4">
               <span>02 //</span>
@@ -489,7 +457,6 @@
                 </p>
               </div>
 
-              <!-- Key Academic Focus Areas -->
               <div class="pt-2">
                 <div class="font-mono text-[11px] uppercase tracking-wider text-slate-400 mb-2">
                   Core Specialization Focus
@@ -507,9 +474,6 @@
       </div>
     </section>
 
-    <!-- =================================================================== -->
-    <!-- 4. TECHNICAL SKILLS SECTION                                         -->
-    <!-- =================================================================== -->
     <section id="skills" class="scroll-mt-20 border-t border-slate-200/80 dark:border-slate-800/80">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
@@ -523,7 +487,6 @@
             </h2>
           </div>
 
-          <!-- Interactive Category Filter Tabs -->
           <div role="tablist" aria-label="Filter skills by category" class="inline-flex flex-wrap gap-1.5 p-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
             <button type="button" data-skill-filter="all" class="skill-filter-btn px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-white dark:bg-slate-800 text-slate-900 dark:text-emerald-400 shadow-sm transition-all">
               All
@@ -540,9 +503,7 @@
           </div>
         </div>
 
-        <!-- Skill Category Cards Grid -->
         <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Category 1: Database & Data Modeling -->
           <div data-skill-category="database" class="skill-card rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] p-6 space-y-5 transition-all">
             <div class="flex items-center justify-between">
               <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
@@ -588,7 +549,6 @@
             </ul>
           </div>
 
-          <!-- Category 2: Programming & Web -->
           <div data-skill-category="programming" class="skill-card rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] p-6 space-y-5 transition-all">
             <div class="flex items-center justify-between">
               <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/25 flex items-center justify-center text-cyan-600 dark:text-cyan-400">
@@ -619,7 +579,6 @@
             </p>
           </div>
 
-          <!-- Category 3: Tools & Workflow -->
           <div data-skill-category="tools" class="skill-card rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] p-6 space-y-5 transition-all">
             <div class="flex items-center justify-between">
               <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-center text-amber-600 dark:text-amber-400">
@@ -656,9 +615,6 @@
       </div>
     </section>
 
-    <!-- =================================================================== -->
-    <!-- 5. FEATURED ACADEMIC PROJECTS SECTION                               -->
-    <!-- =================================================================== -->
     <section id="projects" class="scroll-mt-20 border-t border-slate-200/80 dark:border-slate-800/80 bg-white/50 dark:bg-slate-900/25">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-10">
         <div class="space-y-2">
@@ -674,9 +630,7 @@
           </p>
         </div>
 
-        <!-- Projects Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Project 1: finmansys -->
           <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] hover:border-emerald-500/40 dark:hover:border-emerald-500/40 p-6 flex flex-col justify-between shadow-sm transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
@@ -719,36 +673,36 @@
             </div>
           </article>
 
-          <!-- Project 2: Hybrid Specialization Laboratory (HSLab) System Model -->
           <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] hover:border-emerald-500/40 dark:hover:border-emerald-500/40 p-6 flex flex-col justify-between shadow-sm transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-700 dark:text-cyan-300 border border-cyan-500/20">
-                  SYSTEMS DESIGN
+                  WEB + RDBMS
                 </span>
                 <span class="font-mono text-xs text-slate-400">PRJ_02</span>
               </div>
 
               <div>
                 <h3 class="text-lg font-bold text-slate-900 dark:text-slate-50 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                  Hybrid Specialization Laboratory (HSLab) System Model
+                  Barangay Blotter Management System
                 </h3>
                 <p class="mt-2.5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Designed system actors, network connectivity diagrams, and detailed use-case specifications for a proposed laboratory infrastructure setup.
+                  Developed a digital blotter and incident recording system for barangay operations, featuring normalized tables for case logs, involved parties, mediation schedules, and searchable status tracking.
                 </p>
               </div>
             </div>
 
             <div class="pt-6 mt-6 border-t border-slate-200/70 dark:border-slate-800 space-y-4">
               <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Use-Case Specs</span>
-                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Network Topology</span>
-                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Actor Modeling</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">PHP</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">MySQL</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">JavaScript</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">XAMPP</span>
               </div>
 
               <button
                 type="button"
-                data-project-modal="hslab"
+                data-project-modal="blotter"
                 class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white text-xs sm:text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
               >
                 <span>View Details</span>
@@ -761,7 +715,6 @@
             </div>
           </article>
 
-          <!-- Project 3: Relational Database & SQL Administration Labs -->
           <article class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] hover:border-emerald-500/40 dark:hover:border-emerald-500/40 p-6 flex flex-col justify-between shadow-sm transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
@@ -807,13 +760,9 @@
       </div>
     </section>
 
-    <!-- =================================================================== -->
-    <!-- 6. CONTACT SECTION & FOOTER                                         -->
-    <!-- =================================================================== -->
     <section id="contact" class="scroll-mt-20 border-t border-slate-200/80 dark:border-slate-800/80">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          <!-- Left Column: Direct Contact Card -->
           <div class="lg:col-span-5 space-y-6">
             <div class="space-y-2">
               <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
@@ -829,7 +778,6 @@
             </div>
 
             <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] p-6 space-y-4">
-              <!-- Location -->
               <div class="flex items-start gap-3.5">
                 <div class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
                   <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -843,7 +791,6 @@
                 </div>
               </div>
 
-              <!-- GitHub Link -->
               <div class="flex items-start gap-3.5 pt-3 border-t border-slate-200/70 dark:border-slate-800">
                 <div class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
                   <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -867,11 +814,73 @@
                 </div>
               </div>
 
-              <!-- Quick Email Copy -->
+              <div class="flex items-start gap-3.5 pt-3 border-t border-slate-200/70 dark:border-slate-800">
+                <div class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-mono text-xs text-slate-400">LINKEDIN</div>
+                  <a
+                    href="https://www.linkedin.com/in/john-mel-villamor-008035194"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline mt-0.5"
+                  >
+                    <span>linkedin.com/in/villamor</span>
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 pt-3 border-t border-slate-200/70 dark:border-slate-800">
+                <div class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-mono text-xs text-slate-400">FACEBOOK</div>
+                  <a
+                    href="https://www.facebook.com/Johnmel.Ildefonso.Villamor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline mt-0.5"
+                  >
+                    <span>facebook.com/villamor</span>
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
               <div class="flex items-center justify-between gap-3 pt-3 border-t border-slate-200/70 dark:border-slate-800">
-                <div class="min-w-0">
-                  <div class="font-mono text-xs text-slate-400">EMAIL</div>
-                  <div class="font-mono text-sm text-slate-800 dark:text-slate-200 truncate mt-0.5">villamor.db@gmail.com</div>
+                <div class="flex items-start gap-3.5 min-w-0">
+                  <div class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="font-mono text-xs text-slate-400">GMAIL</div>
+                    <a
+                      href="mailto:villamor.db@gmail.com"
+                      class="inline-flex items-center gap-1 font-mono text-sm text-emerald-600 dark:text-emerald-400 hover:underline truncate mt-0.5"
+                    >
+                      <span>johnmelildefonso26@gmail.com</span>
+                      <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
                 <button
                   id="copy-email-contact"
@@ -885,7 +894,6 @@
             </div>
           </div>
 
-          <!-- Right Column: Client-Side Validated Contact Form -->
           <div class="lg:col-span-7">
             <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] p-6 sm:p-8 shadow-sm">
               <form id="contact-form" novalidate class="space-y-4">
@@ -964,7 +972,6 @@
                 </div>
               </form>
 
-              <!-- Confirmation Feedback Box (Hidden until valid submission) -->
               <div id="contact-confirmation" class="hidden space-y-4">
                 <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-800 dark:text-emerald-200 space-y-2">
                   <div class="flex items-center gap-2 font-mono text-xs font-semibold uppercase text-emerald-600 dark:text-emerald-400">
@@ -990,9 +997,6 @@
     </section>
   </main>
 
-  <!-- ===================================================================== -->
-  <!-- FOOTER                                                                -->
-  <!-- ===================================================================== -->
   <footer class="relative z-10 border-t border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-[#090d16]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
       <div class="font-mono">
@@ -1005,9 +1009,6 @@
     </div>
   </footer>
 
-  <!-- ===================================================================== -->
-  <!-- PROJECT DETAILS MODAL                                                 -->
-  <!-- ===================================================================== -->
   <div
     id="project-modal"
     role="dialog"
@@ -1016,7 +1017,6 @@
     class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/75 backdrop-blur-sm"
   >
     <div id="modal-card" class="w-full max-w-2xl rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d1424] shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
-      <!-- Modal Header -->
       <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between gap-4 bg-slate-50 dark:bg-slate-900/90">
         <div>
           <span id="modal-badge" class="font-mono text-[11px] uppercase tracking-wider text-emerald-600 dark:text-emerald-400"></span>
@@ -1035,7 +1035,6 @@
         </button>
       </div>
 
-      <!-- Modal Body -->
       <div class="p-6 overflow-y-auto space-y-5 text-sm">
         <div>
           <h4 class="font-mono text-xs uppercase tracking-wider text-slate-400 mb-1.5">Overview</h4>
@@ -1060,7 +1059,6 @@
         </div>
       </div>
 
-      <!-- Modal Footer -->
       <div class="px-6 py-3.5 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/80 flex items-center justify-between">
         <a
           href="https://github.com/janumeru"
@@ -1085,9 +1083,6 @@
     </div>
   </div>
 
-  <!-- ===================================================================== -->
-  <!-- SUBTLE TOAST NOTIFICATION (Replaces any browser alert)                -->
-  <!-- ===================================================================== -->
   <div
     id="toast-banner"
     role="status"
@@ -1100,20 +1095,13 @@
     </div>
   </div>
 
-  <!-- ===================================================================== -->
-  <!-- INTERACTIVE APPLICATION LOGIC                                         -->
-  <!-- ===================================================================== -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Set current year in footer
       const yearEl = document.getElementById('current-year');
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
       }
 
-      // -------------------------------------------------------------------
-      // 1. LIGHT / DARK THEME TOGGLE
-      // -------------------------------------------------------------------
       const themeToggleBtn = document.getElementById('theme-toggle');
       if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', function () {
@@ -1131,9 +1119,6 @@
         });
       }
 
-      // -------------------------------------------------------------------
-      // 2. MOBILE NAVIGATION MENU TOGGLE
-      // -------------------------------------------------------------------
       const mobileMenuBtn = document.getElementById('mobile-menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
       const menuOpenIcon = document.getElementById('menu-open-icon');
@@ -1158,9 +1143,6 @@
         });
       }
 
-      // -------------------------------------------------------------------
-      // 3. HERO SQL / SCHEMA PREVIEW TABS
-      // -------------------------------------------------------------------
       const tabSchema = document.getElementById('tab-schema');
       const tabQuery = document.getElementById('tab-query');
       const panelSchema = document.getElementById('panel-schema');
@@ -1189,9 +1171,6 @@
         tabQuery.addEventListener('click', function () { activateHeroTab('query'); });
       }
 
-      // -------------------------------------------------------------------
-      // 4. CLIPBOARD COPY EMAIL (Using document.execCommand('copy'))
-      // -------------------------------------------------------------------
       function copyTextFallback(text) {
         const textarea = document.createElement('textarea');
         textarea.value = text;
@@ -1228,9 +1207,6 @@
         });
       });
 
-      // -------------------------------------------------------------------
-      // 5. SKILLS CATEGORY FILTERING
-      // -------------------------------------------------------------------
       const skillFilterBtns = document.querySelectorAll('.skill-filter-btn');
       const skillCards = document.querySelectorAll('.skill-card');
 
@@ -1254,9 +1230,6 @@
         });
       });
 
-      // -------------------------------------------------------------------
-      // 6. PROJECT DETAILS MODAL
-      // -------------------------------------------------------------------
       const projectData = {
         finmansys: {
           badge: 'PRJ_01 // WEB & RELATIONAL DATABASE',
@@ -1271,17 +1244,18 @@
           snippet: '-- Core referential structure\nALTER TABLE transactions\n  ADD CONSTRAINT fk_tx_account\n  FOREIGN KEY (account_id) REFERENCES accounts(account_id)\n  ON UPDATE CASCADE ON DELETE RESTRICT;',
           tags: ['PHP', 'MySQL', 'JavaScript', 'HTML5/CSS3', 'XAMPP', '3NF Schema']
         },
-        hslab: {
-          badge: 'PRJ_02 // SYSTEMS ANALYSIS & INFRASTRUCTURE MODELING',
-          title: 'Hybrid Specialization Laboratory (HSLab) System Model',
-          overview: 'Designed system actors, network connectivity diagrams, and detailed use-case specifications for a proposed laboratory infrastructure setup.',
+        blotter: {
+          badge: 'PRJ_02 // CIVIC RECORDS & RELATIONAL DATABASE',
+          title: 'Barangay Blotter Management System',
+          overview: 'Built a centralized records management system to replace manual logbooks, organizing incident reports, complainants, respondents, and hearing schedules in a normalized MySQL database.',
           highlights: [
-            'Identified and documented primary and secondary system actors including Laboratory Administrators, Faculty Instructors, and Student Workstation Users.',
-            'Created logical network connectivity diagrams illustrating workstation subnets, local server routing, and database access points.',
-            'Authored structured use-case specifications detailing preconditions, main flows, alternate paths, and postconditions for lab operations.'
+            'Normalized relational schema separating blotter incidents, involved individuals (complainants, respondents, witnesses), case classifications, and hearing logs.',
+            'Enforced foreign key constraints and indexed case reference numbers to prevent orphaned records and speed up case lookups.',
+            'Implemented SQL search and status filtering (Pending, Under Mediation, Settled, Endorsed) for desk officers and barangay officials.',
+            'Built structured CRUD workflows and input validation using PHP, MySQL, JavaScript, and XAMPP.'
           ],
-          snippet: 'ACTORS: [Lab_Admin, Instructor, Student_Client]\nTOPOLOGY: Workstation_VLAN <-> Core_Switch <-> Local_Lab_Server\nSPEC: UC-01 Workstation Authentication & Session Logging',
-          tags: ['Systems Modeling', 'Use-Case Specifications', 'Network Diagrams', 'Actor Analysis']
+          snippet: '-- Relational structure linking blotter cases and involved parties\nSELECT b.blotter_no, b.incident_type, b.status, p.full_name, p.role\nFROM blotter_cases b\nINNER JOIN case_parties p ON b.case_id = p.case_id\nWHERE b.status = \'Under Mediation\'\nORDER BY b.date_reported DESC;',
+          tags: ['PHP', 'MySQL', 'JavaScript', 'HTML5/CSS3', 'XAMPP', 'Relational Schema']
         },
         sqllabs: {
           badge: 'PRJ_03 // DATABASE ADMINISTRATION & DATA WAREHOUSING',
@@ -1366,9 +1340,6 @@
         }
       });
 
-      // -------------------------------------------------------------------
-      // 7. CONTACT FORM CLIENT-SIDE VALIDATION & CONFIRMATION
-      // -------------------------------------------------------------------
       const contactForm = document.getElementById('contact-form');
       const contactConfirmation = document.getElementById('contact-confirmation');
       const confirmationSummary = document.getElementById('confirmation-summary');
@@ -1439,9 +1410,6 @@
         });
       }
 
-      // -------------------------------------------------------------------
-      // 8. TOAST FEEDBACK HELPER
-      // -------------------------------------------------------------------
       let toastTimer = null;
       function showToast(message) {
         const toast = document.getElementById('toast-banner');
